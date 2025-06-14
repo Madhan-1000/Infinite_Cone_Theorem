@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .content{
+            display: flex;
+            width: 100vw;
+        }
+        .left{
+            width: 50%;
+            background-color: azure;
+        }
+        .right{
+             object-fit: contain;
+            width: 50%;
+            /* background-image: url("assets/image.png"); */
+            background-color: azure;
+    
+        }
+        * {
+            margin: 0 0;
+            padding: 0 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: white;
+            width: 100vw;
+        }
+
+        h1 {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+        .main{
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Every Positive Radius Circle Exists on a Hollow Infinite Cone</h1>
+    <div class="main">
+        <strong>
+            <u>
+                ABSTRACT:
+            </u>
+    
+        </strong>
+        We present a simple geometric argument demonstrating that every circle with a positive radius can be realized as a cross-sectional slice of a hollow infinite right circular cone.By exploring the relationship between trigonometry and the geometric properties of the cone—specifically the slant height x, the apex half-angle θ, and the resulting radius r —we construct a visually intuitive and mathematically straightforward proof. This result highlights an elegant connection between geometry and the real number continuum.
+        <br>
+        <br>
+        <br>
+        <strong>
+            <u>INTRODUCTION:
+            </u>
+        </strong>
+        <br>
+        <br>
+        <strong>
+            Motivation   
+        </strong>
+        <hr>
+Motivation
+This idea began while casually thinking about shapes with infinite area. I wondered whether a hollow cone with infinite slant height could contain every possible circle as a cross-section. Surprisingly, a simple geometric relationship between slant height, angle, and radius confirmed it.
+Though the result may seem obvious, there are very few theorems that deal with such cones or infinite geometric surfaces in this way. This note presents the argument visually and intuitively, avoiding calculus and focusing purely on geometry.
+Written from the perspective of an undergraduate exploring ideas, this work is shared as an exercise in curiosity and open to feedback or correction.
+
+
+   <br>
+        <br>
+        <strong>
+            <u>
+                Geometric Notations and Definitions:
+            </u>
+        </strong>
+        <br>
+        <br>
+        
+        
+We define a hollow infinite cone as a cone that has no solid volume and extends infinitely along its slant height. In this setup, we consider the slant height of the cone to be a variable denoted by x, and we assume it extends indefinitely.
+The cone has an apex angle of 2θ (two theta), which means the angle between the two sides of the cone at the tip is 2 times theta. Therefore, the half-angle at the apex is θ.
+For any given slant height x, the radius of the circular cross-section at that point is given by the equation:
+     <br>
+<strong>
+    
+    r(x) = x.sin(θ)
+</strong>
+<br>
+<strong>
+
+    Here:
+</strong>
+<br>
+<ul>
+    <li>r(x) is the radius of the circle at slant height x,
+</li>
+    <li>x is the slant height from the apex to the point on the cone,
+</li>
+    <li>θ is the fixed half-angle of the cone,
+</li>
+    <li>sin(θ) is the sine of that angle.
+</li>
+</ul>
+<br>
+Since we're dealing with an idealized infinite shape, it's important to note that certain aspects may not be formally defined in conventional finite geometry. To address this, we will initially use a subset of rational numbers greater than zero to construct our argument in a more grounded way before generalizing the result.
+        
+
+    </div>
+    <div class="content">
+        <div class="left">
+            <strong>
+                <u>
+
+                    Theorem and Proof:
+                </u>
+            </strong><br><br>
+            <strong>
+                
+                Theorem Statement:
+            </strong>
+For every positive real number r, there exists a point on the surface of a hollow infinite cone where the radius of the circular cross-section is exactly r.
+<br><br>
+<strong>
+
+    Proof:
+</strong>
+We are working with a hollow cone that extends infinitely along its slant height. Let the slant height be represented by x, and the fixed half-angle of the cone be θ, where 0 < θ < 180° (excluding the endpoints to avoid degeneracy).
+<br>
+<strong>
+
+    Let:
+</strong>
+<ul>
+    <li>x = slant height (variable)</li>
+    <li>θ = fixed half-angle of the cone (0° < θ < 180°)</li>
+    <li>r(x) = radius at slant height x
+</li>
+</ul><br>
+<strong>
+
+    Define the radius function:
+</strong><br>
+r(x) = x .sin(θ)
+<br>
+<strong>
+    
+    Step 1: 
+    Rational radii (r ∈ Q, r > 0):
+</strong><br>
+<ul>
+    <li>Choose any rational radius r > 0
+</li>
+    <li>Solve for slant height:
+</li>
+    <li>x = r / sin(θ)
+</li>
+    <li>Since sin(θ) is a constant > 0, x > 0
+</li>
+    <li>So, every positive rational radius has a valid location on the cone
+</li>
+</ul>
+<strong>
+
+    Step 2: Extend to real radii (r ∈ R, r > 0):
+</strong>
+<ul>
+    <li>Rational numbers are dense in real numbers
+</li>
+    <li>Function r(x) = x.sin(θ) is continuous
+</li>
+    <li>⇒ All positive real radii are also achieved on the cone
+</li>
+</ul>
+<br>
+Since r is any positive real number and sin(θ) is also positive, this equation always yields a valid, positive slant height x. Therefore, for every positive radius r, there exists a corresponding point on the slant height of the cone where a circle of that radius lies.
+Thus, the surface of the cone contains a circle of every possible positive radius, as claimed.
+
+</div>
+        <div class="right"><img src="assets/image.png" alt=""></div>
+    </div>
+    <br><br>
+<h5>
+    <strong><u>
+
+        Conclusion:
+    </u></strong>
+</h5>
+<p>
+
+    We have shown that a hollow infinite cone, with a fixed half-angle, can contain a circle of every positive radius as a cross-section along its slant height. By using a basic geometric formula and starting with rational numbers, we extended the idea to cover all positive real numbers. The result is both simple and intuitive, showing how an infinite geometric shape can represent an entire continuous set of circular sizes.
+</p>
+
+</body>
+
+</html>
